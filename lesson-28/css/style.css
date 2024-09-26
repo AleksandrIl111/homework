@@ -17,9 +17,8 @@
 
 .block4-text {
     word-spacing: 30px;
-    text-decoration-line: overline wavy;
-    color: #88228a;
-    text-shadow: 0 15 5 #88228a;
+    text-decoration: overline wavy;
+    text-shadow: 1px 1px 1px #88228a; 
 }
 
 .block5-text {
