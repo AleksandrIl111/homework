@@ -1,0 +1,356 @@
+:root {
+    --general-text: #312C27;
+    --accent-text: #1F1711;
+    --general-bg: #FFF9F4;
+    --accent-bg: #FFE0CB;
+    --accent-color: #FFA55C;
+    --transition: all .4s;
+}
+
+.body {
+    font-family: "Montserrat", "Arial", sans-serif;
+    line-height: 1.5;
+    color: var(--general-text);
+    background: var(--general-bg);
+}
+
+.body--opened-menu {
+    overflow: hidden;
+    /*обрезает весь контент, который больше body и не даёт появиться скрол-бару*/
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1310px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--accent-color);
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+    padding: 3px 15px;
+    height: 62px;
+    transition: all .4s;
+}
+
+.button:hover {
+    background: #FF9138;
+}
+
+/* =================== Шапка =================== */
+
+.header {
+    background: url("../img/decor/bg-header.png") 50% 100% / cover no-repeat;
+}
+
+.header__top {
+    padding-top: 19px;
+}
+
+.header__top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.header__logo {
+    max-width: 174px;
+    z-index: 11;/*поднимает логотип до уровня отображения в адаптивном меню*/
+}
+
+.header__logo img {
+    width: 100%;
+}
+
+.nav {}
+
+.nav__list {
+    display: flex;
+    gap: 4vh 40px;/*расстояние между пунктами меню. При уменьшении экрана vh тоже уменьшается*/
+}
+
+.nav__item {}
+
+.nav__link {
+    display: block;
+    padding: 5px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.burger-icon {
+    display: none;/*скрытие бургер-кнопки до активации адаптива*/
+    width: 50px;
+    height: 50px;
+    align-items: center;/*размещение по центру кликабельной области*/
+    justify-content: center;/*размещение по центру кликабельной области*/
+    z-index: 11;
+}
+
+.burger-icon span,
+.burger-icon span::before,
+.burger-icon span::after {
+    display: block;
+    width: 30px;
+    height: 3px;
+    border-radius: 100px;
+    background: var(--general-text);
+    transition: all .4s;/*плавность перехода*/
+}
+
+.burger-icon span {
+    position: relative;
+}
+
+.burger-icon span::before,
+.burger-icon span::after {
+    content: '';
+    position: absolute;
+}
+
+.burger-icon span::before {
+    top: -8px;/*отступ для разделения полосок бургера*/
+}
+
+.burger-icon span::after {
+    bottom: -8px;/*отступ для разделения полосок бургера*/
+}
+
+.body--opened-menu .burger-icon span {
+    background: transparent;/*делает прозрачной лишнюю полоску в крестике*/
+}
+
+.body--opened-menu .burger-icon span::before {
+    top: 0px;
+    transform: rotate(45deg);/*поворачивает полоску на 45` вправо*/
+}
+.body--opened-menu .burger-icon span::after{
+    bottom: 0px;
+    transform: rotate(-45deg);/*поворачивает полоску на 45` влево*/
+}
+
+.nav__link::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: -13px;
+    z-index: -1;
+    width: 34px;
+    height: 34px;
+    background: var(--accent-color);
+    border-radius: 50%;
+
+    opacity: 0;/* уровень прозрачности (0 - прозрачный) */
+    transition: all .4s;/* скорость появления кружка на ссылке */
+}
+
+.nav__link:hover::before {
+    opacity: 1;/* уровень прозрачности (1 - не прозрачный) */
+}
+
+/* ============= Секция под шапкой =============== */
+
+.hero {
+    padding: 50px 0 140px;
+}
+
+.hero__inner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.hero__content {
+    max-width: 520px;
+}
+
+.hero__info {
+    color: #B197B3;
+    text-transform: uppercase;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero__info span {
+    display: flex;
+    align-items: center;
+}
+
+.hero__info span::after {
+    content: '';
+    background: #B197B3;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    display: block;
+    margin: 0 10px;
+}
+
+.hero__info span:last-child:after {
+    content: none;
+}
+
+.hero__title {
+    font-family: 'Gabriola';
+    font-size: 74px;
+    line-height: 0.82;
+    margin-bottom: 30px;
+}
+
+.hero__text {
+    max-width: 360px;
+    margin-bottom: 40px;
+}
+
+.hero__button {
+    max-width: 360px;
+    width: 100%;
+}
+
+.hero__img {
+    margin-right: 247px;
+    position: relative;
+}
+
+.hero__img>img {
+    width: 100%;
+}
+
+.hero__img-control {
+    position: absolute;
+    bottom: 11%;/* позиционирует кнопку справа на картинке */
+    left: calc(100% - 39px);/* позиционирует кнопку справа на картинке */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 200px;
+    text-align: left;
+}
+
+.hero__img-control--mobile {
+    display: none;
+}
+
+.hero__img-button {
+    flex-shrink: 0;/* чтобы кружок кнопки не сплющивался */
+    display: flex;/* треугольник по центру */
+    align-items: center;/* треугольник по центру */
+    justify-content: center;/* треугольник по центру */
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    background: #FFE0CB;
+    box-shadow: 0px 4px 20px rgba(184, 148, 126, 0.3);
+    position: relative;
+}
+
+.hero__img-button img {
+    padding-left: 8.8%;
+}
+
+.hero__img-button::before {
+    content: '';
+    position: absolute;
+    inset: 5px;/*позиционирование ободка вокруг треугольника*/
+    border-radius: 50%;/*ободок*/
+    border: 1px solid var(--accent-color);/*толщина и цвет ободка*/
+    opacity: 0;/* уровень прозрачности (0 - прозрачный) */
+    transition: all .4s;/* скорость появления ободка */
+}
+
+.hero__img-button:hover::before {
+    opacity: 1;/* уровень прозрачности (1 - не прозрачный) */
+}
+
+/* ============== Адаптив ============== */
+
+@media (max-width: 1200px) {
+    .hero__img {
+        margin: 0;
+        max-width: 377px;/*не даёт надписи вылезти за границу картинки*/
+    }
+    .hero__img-control {
+        position: static;/* кнопка play видео под картинкой */
+        max-width: none;/* кнопка play видео под картинкой */
+        margin-top: 30px;/* отступ от картинки */
+    }
+}
+
+@media (max-width: 900px) {
+    .nav{
+    position: fixed;
+    inset: 0;/*заполняет собой всё пространство родителя*/
+    z-index: 10;
+    background: var(--general-bg);/* фон строки меню */
+    padding: 26vh 15px 30px;/*при уменьшении экрана показатель vh тоже уменьшается*/
+    font-size: 24px;
+    transform: translateY(-50%);
+    opacity: 0;/* прозрачность */
+    visibility: hidden;
+    transition: all 0.4s;/* плавность появления */
+    }
+
+    .nav__list {
+    flex-direction: column;/*расположения списка меню - вертикально*/
+    align-items: center;/*список меню - по центру*/
+    }
+
+    .body--opened-menu .nav {
+    transform: translateY(0%);
+    opacity: 1;
+    visibility: visible;
+    }
+    
+    .burger-icon {
+        display: flex;
+    }
+}
+
+@media (max-width: 800px) {
+    .hero__content {/*позиционирование контента по центру*/
+        max-width: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    .hero__img {
+        display: none;
+    }
+    .hero__img-control--mobile {
+        display: flex;
+        margin:0 0 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        padding-bottom: 80px;
+    }
+    .hero__title {
+        font-size: 12vw;
+    }
+}
