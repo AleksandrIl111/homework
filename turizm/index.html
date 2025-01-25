@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт для туризма</title>
+    <link href="./css/fonts.css" rel="stylesheet">
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<!-- ======================= Header =============================== -->
+
+<body .class="body">
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__top">
+                <div class="container">
+                    <div class="header__top-inner">
+                        <img class="header__logo" src="img/logo/Logo.svg" alt="Логотип Trip Goal">
+                        <button class="menu-toggle" id="menu-toggle">☰</button>
+                        <nav class="nav">
+                            <ul class="nav__list">
+                                <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+                                <li class="nav__item"><a class="nav__link" href="#">About</a></li>
+                                <li class="nav__item"><a class="nav__link" href="#">Packages</a></li>
+                                <li class="nav__item"><a class="nav__link" href="#">Contact Us</a></li>
+                                <li class="nav__item"><a class="nav__link" href="#">FAQ</a></li>
+                            </ul>
+                        </nav>
+                        <button class="cta-button" id="register-button">Register</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- =========================== Main ==================================== -->
+        <main class="main">
+            <section class="hero1">
+                <div class="container">
+                    <div class="hero1__inner">
+                        <div class="hero1__img">
+                            <img src="img/contents/group-143.png" alt="Пейзаж на фоне гор" class="responsive-img">
+                        </div>
+                        <div class="hero1__content">
+                            <div class="hero1__info">Book Now</div>
+                            <div class="hero1__title">Let's Enjoy Your Trip with TripGoal
+                                <span class="racet"><img src="img/icons/group.svg"></span>
+                            </div>
+                            <p class="hero1__text">Thinking of taking a break from every day's busy life? Planning to go
+                                out
+                                of the country with your loved ones to have some fun and quality time in a
+                                cost-effective
+                                way?
+                            </p>
+                            <a class="button-start" id="open-modal">Start Now</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================= Аккордеон (1 секц.) ======== -->
+            <div class="container">
+                <div class="select">
+                    <div class="list2">
+                        <form>
+                            <div class="item01">Location
+                                <select name="location">
+                                    <option value="">Select</option>
+                                    <option value="indonesia">Indonesia</option>
+                                    <option value="italy">Italy</option>
+                                    <option value="tokyo_japan">Tokyo, Japan</option>
+                                </select>
+                            </div>
+                            <div class="item02">Your Category
+                                <select name="category">
+                                    <option value="">Select</option>
+                                    <option value="hobbies">Hobbies</option>
+                                    <option value="work">Work</option>
+                                    <option value="family_time">Family time</option>
+                                </select>
+                            </div>
+                            <div class="item03">Total Person
+                                <select name="total_person">
+                                    <option value="">Select</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="3">4</option>
+                                    <option value="3">5</option>
+                                    <option value="3">6</option>
+                                    <option value="3">7</option>
+                                </select>
+                            </div>
+                            <div class="wrapperb-s">
+                                <button class="buttons" type="submit"><img src="img/icons/book-now.svg"
+                                        alt="календарик"></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ====================== 2-ая секция ================= -->
+            <section class="hero2">
+                <div class="container">
+                    <div class="hero2__inner2">
+                        <div class="hero2__content2">
+                            <div class="hero2__info2">3 steps for the perfect trip</div>
+                            <div class="hero2__title2">Find travel perfection</div>
+                            <p class="hero2__text2">Naturally head of the class whenit comes to luxury travel
+                                planning,bbecause<br> do more homework than anyone else</p>
+                        </div>
+                        <!-- === 3 мини-блока === -->
+                        <div class="feedback">
+                            <a class="feedback__chat" href="#"><img src="img/icons/chat.svg" alt="значёк чата">
+                                <h3>Tell us what you want to do</h3>
+                                <p>Fill out a 2-minute questionnaire about how you like to travel</p>
+                            </a>
+                            <a class="feedback__preferences" href="#"><img src="img/icons/calendar.svg"
+                                    alt="календарик">
+                                <h3>Share your travel preference</h3>
+                                <p>It all happends online,We recommend<br>everything to your vision</p>
+                            </a>
+                            <a class="feedback__recommend" href="#"><img src="img/icons/star.svg" alt="2звёзды">
+                                <h3>We’ll give you recommendations</h3>
+                                <p>Once you’re happy with your final plan, We handle everything for you</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================== 3-я секция (слайдер) ================-->
+            <section class="hero3">
+                <div class="container3">
+                    <div class="hero3__inner3">
+                        <div class="hero3__content3">
+                            <div class="hero3__info3">Location</div>
+                            <div class="hero3__title3">Suggested Location</div>
+                            <div class="hero3__text3">Travel is my life. Since 1999, I’ve been traveling around the
+                                world
+                                nonstop.<br> If you also love travel, you’re in the right place!
+                                <div class="button-sl">
+                                    <button class="prev" onclick="changeSlide(-1,1)">
+                                        <img src="img/icons/left-group-138.svg" alt="Назад">
+                                    </button>
+                                    <button class="next" onclick="changeSlide(1,1)">
+                                        <img src="img/icons/right-group-18.svg" alt="Вперёд">
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- ===== Слайдер ======= -->
+                            <div class="slider">
+                                <div class="slides">
+                                    <div class="slide active">
+                                        <img src="img/contents/Frame5.jpeg" alt="Слайд 1">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="img/contents/frame6.jpeg" alt="Слайд 2">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="img/contents/frame7.jpeg" alt="Слайд 3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================== 4-ая секция =============== -->
+            <section class="hero4">
+                <div class="container4">
+                    <div class="hero4__inner4">
+                        <div class="hero4__content4">
+                            <img src="img/contents/image6.jpeg" alt="Девушка с рюкзаком на берегу реки"
+                                class="responsive-image">
+                            <div class="ellips1">
+                                <div class="ellips2">
+                                    <img src="img/geo-karty/vector1.svg" alt="Кнопка Play" class="play-button"
+                                        id="playButton">
+                                </div>
+                            </div>
+                            <video id="myVideo" class="video" width="640" height="360" style="display: none;">
+                                <source src="video/wodopad.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="karta">
+                                <img src="img/geo-karty/contur.png" alt="контур географической карты"
+                                    class="responsive-image1">
+                                <div class="karta__compas">
+                                    <img src="img/geo-karty/compas.png">
+                                </div>
+                                <div class="karta__inner">
+                                    <div class="hero4__text">Take a Tour</div>
+                                    <div class="hero4__text1">Discover Our Travel Guideline</div>
+                                    <p class="hero4__text2">For curious travelers who want to connect locally and go<br>
+                                        into a place. Our Experiential Travel Guides highlight<br>
+                                        offbeat and local experiences that help you.</p>
+                                    <a class="button-start" id="openn-modal">Start Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================== 5-ая секция ================== -->
+            <section class="hero5">
+                <div class="container">
+                    <div class="hero5__inner">
+                        <div class="hero5__content">
+                            <div class="hero5__info">About Us</div>
+                            <div class="hero5__title">The Perfect Travel Place For You & Your Family
+                            </div>
+                            <p class="hero5__text">how travel can be one of the best tools for personal growth. We share
+                                some of the life lessons we've learned on the road that has provided us insight into
+                                empathy, mindfulness, meditation, comfort zones, two-way storytelling, being present,
+                                connection and more.
+                            </p>
+                            <div class="grid">
+                                <div class="container-gr">
+                                    <div class="grid">
+                                        <div class="grid__cub1"><img src="img/geo-karty/visitors1.png"
+                                                alt="кол-во визитов"></div>
+                                        <div class="grid__cub2"><img src="img/geo-karty/hotels2.png"
+                                                alt="кол-во отелей"></div>
+                                        <div class="grid__cub3"><img src="img/geo-karty/food-shop3.png"
+                                                alt="кол-во продуктовых магазинов "></div>
+                                        <div class="grid__cub4"><img src="img/geo-karty/related-spots4.png"
+                                                alt="кол-во сопутствующих мест"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero5__img">
+                            <img src="img/contents/group143.png"
+                                alt="Подушки на подоконнике, горы, залив, ночной городок" class="responsive-img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- =============== 6-я секция ===================== -->
+            <section class="hero6">
+                <div class="container">
+                    <div class="hero6__inner">
+                        <div class="hero6__content">
+                            <div class="hero6__info">Testimonials</div>
+                            <div class="hero6__title">What Our Customer Say About Us</div>
+                            <p class="hero6__text">What customers says about our service and guideline. Customers
+                                compliment<br>is most important to upgradation of bussiness service </p>
+                            <div class="karta6"><img src="img/geo-karty/karta-vector2.svg" alt="Точечный фон геокарты"
+                                    class="background-image">
+                                <div class="overlay-content">
+                                    <div class="overlay-content__block1">
+                                        <div class="foto1" data-content="Текст для Фото 1">
+                                            <img src="img/testimonials/frame11.svg" alt="Фото 1">
+                                        </div>
+                                        <div class="foto2" data-content="Текст для Фото 2">
+                                            <img src="img/testimonials/frame13.svg" alt="Фото 2">
+                                        </div>
+                                        <div class="foto3" data-content="Текст для Фото 3">
+                                            <img src="img/testimonials/frame14.svg" alt="Фото 3">
+                                        </div>
+                                        <div class="foto4" data-content="Текст для Фото 4">
+                                            <img src="img/testimonials/frame16.svg" alt="Фото 4">
+                                        </div>
+                                    </div>
+                                    <div class="overlay-content__block2">
+                                        <div class="foto5" data-content="Текст для Фото 5">
+                                            <img src="img/testimonials/frame9.svg" alt="Фото 5">
+                                        </div>
+                                    </div>
+                                    <div class="overlay-content__block3">
+                                        <div class="foto6" data-content="Текст для Фото 6">
+                                            <img src="img/testimonials/frame10.svg" alt="Фото 6">
+                                        </div>
+                                        <div class="foto7" data-content="Текст для Фото 7">
+                                            <img src="img/testimonials/frame12.png" alt="Фото 7">
+                                        </div>
+                                        <div class="foto8" data-content="Текст для Фото 8">
+                                            <img src="img/testimonials/frame15.svg" alt="Фото 8">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+            <!-- ================== 7-я секция (слайдер2) ====================-->
+            <section class="hero7">
+                <div class="container7">
+                    <div class="hero7__inner">
+                        <div class="hero7__content">
+                            <div class="hero7__info">Social Feed</div>
+                            <div class="hero7__title">Check Our Instagram
+                                <div class="button-sl">
+                                    <button class="prev" onclick="changeSlide(-1,2)">
+                                        <img src="img/icons/left-group-138.svg" alt="Назад">
+                                    </button>
+                                    <button class="next" onclick="changeSlide(1,2)">
+                                        <img src="img/icons/right-group-18.svg" alt="Вперёд">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="profile">Profile</div>
+                            <!-- ===== Слайдер ======= -->
+                            <div class="slider">
+                                <div class="slides">
+                                    <div class="slide active">
+                                        <img src="img/dlya-slaydera/frame4.jpeg" alt="Слайд 1">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="img/dlya-slaydera/frame-5.jpeg" alt="Слайд 2">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="img/dlya-slaydera/frame-6.jpeg" alt="Слайд 3">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="img/dlya-slaydera/frame-7.jpeg" alt="Слайд 4">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="img/dlya-slaydera/frame-8.jpeg" alt="Слайд 5">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrapper7">
+                            <div class="hero71">
+                                <div class="hero71__inner">
+                                    <div class="hero7__info7">Contact Us</div>
+                                    <div class="hero7__title--font">Do You Have Any<br>Questions?
+                                    </div>
+                                    <a class="button-start" id="oopen-modal">Contact Us</a>
+                                </div>
+                                <div class="woman"><img src="img/contents/happy-woman.png"
+                                        alt="Девушка с билетами и чемоданом в руках">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    </section>
+
+    <!-- ================= Подвал ================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <img class="header__logo" src="img/logo/logo.svg" alt="Логотип Trip Goal">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">About</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Packages</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Contact Us</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">FAQ</a></li>
+                    </ul>
+                </nav>
+                <ul class="socsety">
+                    <li class="item1"><a class="link" href="#"><img src="img/icons/Group137.svg"></a></li>
+                    <li class="item2"><a class="link" href="#"><img src="img/icons/Group136.svg"></a></li>
+                    <li class="item3"><a class="link" href="#"><img src="img/icons/Group138.svg"></a></li>
+                </ul>
+            </div>
+            <p class="footer-botton">© 2021. All copyrights reserved by RH Agency</p>
+        </div>
+    </footer>
+
+    <!-- ========= Модальное окно для Register ===================-->
+    <div id="register-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-register">&times;</span>
+            <h2>Register</h2>
+            <form id="register-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <!-- ======== Модальное окно для старта Start Now ============ -->
+    <div id="start-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-start">&times;</span>
+            <h2>Start Now</h2>
+            <form id="start-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="interest">Interest:</label>
+                <input type="text" id="interest" name="interest" required>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <!-- ========= Модальное окно для Contact Us =================-->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-contact">&times;</span>
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="contact-name">Name:</label>
+                <input type="text" id="contact-name" name="contact-name" required>
+                <label for="contact-email">Email:</label>
+                <input type="email" id="contact-email" name="contact-email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <!-- ============ Модальное окно на карте (6-я секция) ===========-->
+    <div id="custom-modal">
+        <div class="custom-modal-content">
+            <span class="custom-close">&times;</span>
+            <div class="icons"><img src="img/icons/kavychki.svg" alt="Верхние кавычки"></div>
+            <div class="texttest">
+                <p> I have traveled and explored several destinations using this platform, no doubt it is highly
+                    recommended
+                    for traveling because it is comfortable and the service is great.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
