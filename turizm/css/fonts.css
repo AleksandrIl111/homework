@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "EksellDisplayTRIAL";
+    src: 
+    url('../fonts/EksellDisplayTRIAL-Medium.woff2') format('woff2'),
+    url('../fonts/EksellDisplayTRIAL-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "AirbnbCereal";
+    src:
+    url("../fonts/AirbnbCerealWBk.woff2") format('woff2'),
+    url("../fonts/AirbnbCerealWBk.woff") format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
