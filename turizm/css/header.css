@@ -1,0 +1,53 @@
+/* ======================= Шапка ====================== */
+.header__top {
+    padding: 25px;
+}
+
+.header__top-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    max-width: 106px;
+    max-height: 45px;
+    cursor: pointer;
+}
+
+.nav__list {
+    font-family: "AirbnbCereal", sans-serif;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    color: var(--black-text);
+}
+
+.nav__link {
+    display: block;
+    padding: 5px;
+    position: relative;
+}
+
+.nav__item :hover {
+    color: var(--accent-color);
+}
+
+.cta-button {
+    background-color: var(--accent-color);
+    font-family: "AirbnbCereal", sans-serif;
+    color: white;
+    border: none;/* Убираю рамку */
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 16px;/* Размер шрифта */
+    font-weight: 500;
+    cursor: pointer;/* Указатель при наведении */
+    line-height: 18px;
+    transition: background-color 0.3s;/* Плавный переход цвета */
+}
+
+.cta-button:hover {
+    background-color: var(--accent-color-hover);
+    /* Более темный синий фон при наведении */
+}

@@ -1,0 +1,366 @@
+/* ======== Медиазапросы для адаптивности картинки 1секц.====== */
+@media (max-width: 768px) {
+    .responsive-img {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+}
+/*===== Медиазапросы для адаптивности текста после картинки ==========*/
+@media (max-width: 558px) {
+    .hero1__content {
+        padding-left: 2%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero1__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero1__content {
+        text-align: center;/* Центрирую текст */
+    }
+
+    .hero1__info {
+        padding-top: 30px;/* Уменьшаю отступ для мобильных устройств */
+    }
+
+    .hero1__title {
+        font-size: 32px;/* Уменьшаю шрифт для мобильных устройств */
+        line-height: 40px;/* Уменьшаю межстрочный интервал */
+    }
+
+    .hero1__text {
+        font-size: 14px;/* Уменьшаю шрифт для мобильных устройств */
+        line-height: 24px;/* Уменьшаю межстрочный интервал */
+    }
+
+    .button-start {
+        position: relative;/* Меняю на относительное позиционирование */
+        top: auto;/* Убираю абсолютное позиционирование */
+        margin-top: 200px;/* Добавляю отступ сверху */
+        left: 0;/* Убираю левый отступ */
+        transform: none;/* Убираю трансформацию */
+        width: 90%;/* Увеличиваю ширину для мобильных устройств */
+        margin: 20px auto;/* Центрирую кнопку */
+    }
+}
+
+/* ========== Адаптив 1-й секции =============== */
+/* Добавленные стили для мобильных устройств */
+@media (max-width: 768px) {
+    .header__top-inner {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        gap: 15px;
+        display: none;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        background: var(--bg-white);
+        z-index: 1000;
+    }
+
+    .nav__list.active {
+        display: flex;
+    }
+
+    .cta-button {
+        width: auto;
+        margin-top: 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .hero1__inner {
+        flex-direction: column;
+        padding-bottom: 25%;
+    }
+
+    .hero1__content {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .hero1__info {
+        padding-top: 30px;
+    }
+
+    .hero1__title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .hero1__text {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .button-start {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .grid-1__item--4 img {
+        padding-top: 0;
+    }
+
+    .grid-1__item--5,
+    .grid-1__item--6,
+    .grid-1__item--7 {
+        text-indent: 0;
+    }
+
+    
+}
+
+/* ======== Адаптив 2-ой секции ==================== */
+@media (max-width: 865px) {
+    .feedback {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 39px;
+    }
+}
+
+@media (max-width: 551px) {
+    .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    inline-size: min-content;
+    }
+}    
+
+@media (max-width: 550px) {
+    .hero2__inner2 {
+        padding-top: 35%;
+    }
+}
+
+/* ============ Адаптив 3-я секция ============ */
+@media (max-width: 550px) {
+    .hero3__text3 {
+        display: flex;
+        flex-direction: column;
+    }
+    .button-sl {
+        margin-left: 67%;
+        margin-top: 10%;
+    }
+}
+
+/* ========== Адаптив 4-я секция=============== */
+@media (max-width: 890px) {
+    .hero4__content4 {
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    } 
+}
+@media (max-width: 1320px) {
+    .responsive-image1 {
+        width: 900px;
+    } 
+}
+@media (max-width: 1250px) {
+    .responsive-image1 {
+        width: 830px;
+    } 
+}
+@media (max-width: 1210px) {
+    .responsive-image1 {
+        width: 730px;
+    } 
+}
+@media (max-width: 1080px) {
+    .responsive-image1 {
+        width: 600px;
+    } 
+}
+
+@media (max-width: 1060px) {
+    .responsive-image1 {
+        width: 500px;
+    } 
+}
+
+@media (max-width: 920px) {
+    .responsive-image1 {
+        display: none;
+    } 
+}
+
+@media (max-width: 920px) {
+    .responsive-image {
+        width: 100%;
+    } 
+}
+
+@media (max-width: 600px) {
+    .hero4__text1 {
+        font-size: 32px;
+    } 
+}
+
+@media (max-width: 566px) {
+    .responsive-image {
+        display: block;
+        width: 100%;
+    } 
+}
+
+@media (max-width: 570px) {
+    .ellips1 {
+        left: 17%;
+    } 
+}
+
+@media (max-width: 1244px) {
+    .karta__compas {
+        display: none;
+    } 
+}
+
+@media (max-width: 890px) {
+    .karta {
+        display: block;
+        flex-wrap: wrap;
+    } 
+}
+
+@media (max-width: 890px) {
+    .hero4__text,
+    .hero4__text1 {
+        text-align: center; /* Выравниваем текст по центру */
+    }
+
+    .hero4__text {
+        padding-top: 20px; /* Уменьшаем отступ сверху */
+    }
+
+    .hero4__text1 {
+        font-size: 32px; /* Уменьшаем размер шрифта */
+        line-height: 42px; /* Уменьшаем высоту строки */
+    }
+
+    .hero4__text2 {
+        padding-bottom: 20px; /* Уменьшаем отступ снизу */
+    }
+}
+
+/* ============= Адаптив 5-я секция ========== */
+@media (max-width: 768px) {
+    .hero5__inner {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 0%;
+    }
+    .hero5__content {
+        max-width: 100%;
+        padding-right: 0%;
+    }
+    .hero5__title {
+        max-width: 100%;
+    }
+    .hero5__text {
+        max-width: 100%;
+    }
+    .grid {
+        justify-self: center;
+
+    }
+    .hero5__img {
+        padding-top: 10%;
+    }
+}
+
+/* ============ Адаптив 7-я секция ================= */
+@media (max-width: 900px) {
+    .hero71 {
+        display: block;
+    }
+}
+@media (max-width: 493px) {
+    .hero7__title--font {
+        font-size: 32px;
+        }
+    }
+
+/* ===Медиа-запросы для адаптивности модалка 6-я секц.=====*/
+@media (max-width: 768px) {
+    .modal-content1 {
+        padding: 15px; /* Уменьшаем отступы на маленьких экранах */
+    }
+
+    .close1 {
+        font-size: 20px; /* Уменьшаем размер кнопки закрытия */
+    }
+        .texttest {
+        font-size: 12px; /* Уменьшаем размер текста для маленьких экранов */
+    }
+
+    .ghir {
+        font-size: 10px; /* Уменьшаем размер текста для заголовка на маленьких экранах */
+    }
+
+    .tonk {
+        font-size: 8px; /* Уменьшаем размер текста для вспомогательного текста */
+    }
+}
+
+
+/* ============= Адаптивные стили (навигация)========== */
+@media (max-width: 768px) {
+    .header__top-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        gap: 15px;
+        display: none;/* Скрываем меню по умолчанию */
+        width: 100%;
+    }
+
+    .nav__list.active {
+        display: flex;/* Показываем меню при активации */
+        top: 10%;
+    }
+
+    .nav__item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .cta-button {
+        width: 150px;
+        margin-top: 15px;
+    }
+
+    .menu-toggle {
+        display: block;/* Показываю кнопку для открытия меню */
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none;/* Скрываю кнопку на больших экранах */
+    }
+}

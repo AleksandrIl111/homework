@@ -1,0 +1,37 @@
+/* =================== Footer (подвал) =================== */
+.footer {
+    height: 128px;
+    background: var(--bg-white);
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 36px;
+}
+
+.socsety {
+    display: flex;
+}
+
+.item2 {
+    padding: 0 12px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: "Airbnb Cereal App", sans-serif;
+    color: var(--gray-text);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    margin-left: -30px;
+    padding-top: 30px;
+}
+
+.thin-line {
+    width: 100%;
+    border: 1.5px solid rgba(105, 118, 135, 0.1);
+}

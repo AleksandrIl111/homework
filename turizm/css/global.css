@@ -1,0 +1,42 @@
+:root {
+    --gray-text: rgb(105, 118, 135);
+    --black-text: rgb(0, 34, 72);
+    --bg-miniblock: rgb(252,252,252);
+    --bg-gray: rgb(248, 248, 248);
+    --bg-white: rgb(255, 255, 255);
+    --accent-color: rgb(54, 133, 251);
+    --accent-color-hover: rgb(44, 89, 227);
+    --green-text: rgb(0, 179, 160);
+}
+
+.body {
+    font-family: "AirbnbCereal", "EksellDisplayTRIAL",
+    "Montserrat","Arial", sans-serif;
+    line-height: 1.5;
+    color: var(--black-text);
+}
+
+.body--opened-menu {
+    overflow: hidden;
+    /*обрезает весь контент, который больше body и не даёт появиться скрол-бару*/
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-gray);
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}
